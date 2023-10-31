@@ -1,0 +1,10 @@
+/* selektor elementu h1 z właściwościami COLOR i FONT-SIZE */
+h1 {
+	color: red;
+	font-size: 70px;
+}
+/* selektor elementu p */
+p {
+	color: blue;
+	font-size: 20px;
+}
