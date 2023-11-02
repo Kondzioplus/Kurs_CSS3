@@ -1,0 +1,12 @@
+/* Selektor KLASY zapisujemy z "." na początku */
+.red {
+    color: red;
+}
+
+.black-background {
+    background-color: black;
+}
+/* Selektor ID zapisujemy z "#" na poczatku */
+#main-header {
+    font-size: 70px;
+}
