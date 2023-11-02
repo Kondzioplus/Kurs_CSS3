@@ -1,0 +1,14 @@
+h1 {
+	color: #777777;
+	font-size: 42px;
+}
+/* Selektor PSEUDOELEMENTU ":first-letter" pozwala stylować PIERWSZĄ LITERE (pseudoelementy zapisujemy po podwójnym "::") */
+h1::first-letter {
+	font-size: 64px;
+	color: #000000;
+}
+/* Selektor pseudoelementu ":after" pozwala dodać elementy na końcu stylowanego selektora */
+a::after {
+	content: " >>";
+	font-weight: bold;
+}
