@@ -1,0 +1,8 @@
+/* nawiasy kwadratowe pozwalają SPRAWDZIĆ czy wystepują szukane SELEKTORY w pliku */
+[data-status] {
+	color: green;
+}
+/* Selektor atrybutu CANCELED pozwala na dokładniejsze stylowanie */
+[data-status="canceled"] {
+	color: red;
+}
