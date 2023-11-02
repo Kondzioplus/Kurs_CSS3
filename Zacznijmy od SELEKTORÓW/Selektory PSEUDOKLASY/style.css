@@ -1,0 +1,18 @@
+a {
+	font-size: 22px;
+}
+/* Selektor PSEUDOKLASY "hover" pozwala ustawić kolor czcionki i tło dla elementu po najechaniu kursorem */
+a:hover {
+	color: red;
+	background-color: #dedede;
+}
+/* Selektor PSEUDOKLASY "focus" pozwala ustawić kolor czcionki i tło dla elementu po przeskoczeniu na niego TABULATOREM */
+a:focus {
+	color: red;
+	border: 1px solid red;
+}
+/* Selektor PSEUDOKLASY "nth-of-type" pozwala ustawic kolor czcionki i tło dla CO DRUGIEGO ELEMENTU listy */
+li:nth-of-type(2n) {
+	color: red;
+	background-color: #dedede;
+}
