@@ -1,0 +1,4 @@
+/* Grupowanie selektorów odbywa sie za pomocą "," */
+h1, h2, .intro {
+	color: red;
+}
