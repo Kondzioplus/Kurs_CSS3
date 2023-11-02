@@ -1,0 +1,10 @@
+/* Selektor KOMBINOWANY wykorzystuje HIERARCHIE elementów. Selektor klasy ".top" pozwala ostylować NAJWYŻEJ położony akapit */
+.top p {
+	font-size: 24px;
+	color: #777777;
+}
+/* Selektor KOMBINOWANY w połaczeniu z klasą ".intro" pozwala ostylować akapity wystepujace po sobie (czyli 2 i 3 w tym przypadku, brak 1 ponieważ przed nim nie wystepuje żaden akapit).*/
+.intro p + p {
+	text-indent: 60px;
+	color: #777777;
+}
