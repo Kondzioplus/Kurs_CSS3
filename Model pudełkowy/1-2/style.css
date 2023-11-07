@@ -1,0 +1,11 @@
+body {
+	background-color: #1dd3b0;
+	font-size: 18px;
+}
+/* skrócony zapis PADDINGU (wewnetrzny margines) */
+article {
+	background-color: #086375;
+	color: #FFFFFF;
+	margin: 30px;
+	padding: 20px 30px;
+}
