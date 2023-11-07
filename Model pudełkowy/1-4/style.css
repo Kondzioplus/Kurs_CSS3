@@ -1,0 +1,15 @@
+body {
+	background-color: #1dd3b0;
+	font-size: 18px;
+}
+
+article {
+	background-color: #086375;
+	color: #FFFFFF;
+	margin: 30px;
+	padding: 20px 30px;
+	width: 50%;
+	min-height: 200px;
+	border-top: 12px solid #E4572E;/* obramowanie górne */
+	border-radius: 25px 25px 0 0;/* obramowanie zaokrąglone narożniki (w tym przypadku zaokrąglenie w górnych narożnikach)*/
+}
