@@ -1,0 +1,13 @@
+body {
+	background-color: #1dd3b0;
+	font-size: 18px;
+}
+/* szerokość (width) i wysokość pudełka (w tym przypadku minimalna wysokość) */
+article {
+	background-color: #086375;
+	color: #FFFFFF;
+	margin: 30px;
+	padding: 20px 30px;
+	width: 50%; /* podanie w "%" pozwala zachować responsywnosć */
+	min-height: 200px;/* minimalna wysokosć 200px lib wiecej jeśli jest taka potrzeba */
+}
