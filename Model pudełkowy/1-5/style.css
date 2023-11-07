@@ -1,0 +1,14 @@
+body {
+	background-color: #1dd3b0;
+	font-size: 18px;
+}
+
+article {
+	background-color: #086375;
+	color: #FFFFFF;
+	margin: 30px;
+	padding: 20px 30px;
+	width: 500px;
+	border: 30px solid #E4572E;
+	box-sizing: border-box; /* pozwala uwolnic sie od modelu pudełkowego */
+}
