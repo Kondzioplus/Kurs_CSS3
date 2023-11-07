@@ -1,0 +1,18 @@
+body {
+	background-color: #1dd3b0;
+	font-size: 18px;
+}
+/* marginesy skrócony zapis (góra, lewo/prawo, dół) */
+article {
+	background-color: #086375;
+	color: #f2d7d7; /*kolor tekstu*/
+	margin: 30px 40px 60px;
+}
+/* indywidualny zapis marginesów.
+article {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+*/
