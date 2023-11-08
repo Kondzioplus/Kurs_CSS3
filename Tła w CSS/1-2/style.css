@@ -1,0 +1,15 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+nav {
+	font-size: 1.4em;
+	padding: 20px;
+	background: url('../1-1/tlo.png') 50% 50% no-repeat #A54657;/*zapis skrócony*/
+    /* zapis normalny 
+    background-color: #A54657;
+    background-image: url('../1-1/tlo.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat; */
+}
