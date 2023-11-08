@@ -1,0 +1,22 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+	background-color: #fcfaed;
+}
+
+article {
+	background-color: #f78668;
+	width: 48%;
+}
+
+.art1 {
+	float: left;
+}
+
+.art2 {
+	float: right;
+}
+/* właściwość CLEAR z wartością BOTH resetuje efekt elementów pływajacych FLOAT z obydwu stron */
+h1 {
+	clear: both;
+}
