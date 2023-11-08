@@ -1,0 +1,19 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+img {
+	filter: saturate(15%) contrast(200%);/*nasycenie 15% i kontrast 200%*/
+    /*filter: blur(7px); - efekt rozmazania obrazu.
+    filter: invert(100%); - efekt negatywu (odwrócenie kolorów)*/
+}
+
