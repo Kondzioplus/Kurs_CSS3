@@ -1,0 +1,15 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+nav {
+	font-size: 1.4em;
+	padding: 20px;
+	color: #FFFFFF;
+    /*gradient liniowy od góry na dół zapis skrócony*/
+	background: url('../1-1/tlo.png') 50% 50% no-repeat, linear-gradient(to bottom, #482630, #A54657);
+}
+
+/*gradient liniowy normalny zapis:
+background-image: linear-gradient(to bottom, #482630, #A54657);*/
