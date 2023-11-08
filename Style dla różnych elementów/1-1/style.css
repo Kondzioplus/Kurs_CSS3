@@ -1,0 +1,16 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	width: 40%;
+	padding: 20px;
+	margin-left: 40px;
+	background-color: #f8d6bb;
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);/*własciwośc BOX-SHADOW dodaje CIEŃ do elementu ( pierwsze 2 pozycje to połozenie na osi X i Y, nastepnie jest ROZMYCIE, na końcu kolor z parametrem KRYCIA ) */
+}
