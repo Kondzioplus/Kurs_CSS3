@@ -1,0 +1,28 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+	background-color: #fcfaed;
+}
+
+article {
+	background-color: #f78668;
+	width: 48%;
+}
+
+img {
+	position: absolute;
+	top: 35px;
+	left: 35px;
+}
+
+nav {
+	background-color: #3e2f5b;
+	color: #fcfaed;
+	padding: 20px 0;
+	font-size: 1.2em;
+	position: fixed;/*pozycja ZAKOTWICZONA/PRZYKLEJONA przesuwa sie razem ze stroną*/
+	top: 0;/*przyklejenie od góry*/
+	left: 0;/*przyklejenie od lewej*/
+	right: 0;/*przyklejenie od prawej*/
+}
+
