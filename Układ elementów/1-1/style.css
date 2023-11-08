@@ -1,0 +1,18 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+	background-color: #fcfaed;
+}
+
+article {
+	background-color: #f78668;
+	width: 48%;
+}
+/* właściwosć FLOAT o wartosci LEFT ustawia kolumne przy lewej stronie i robi miejsce po prawej */
+.art1 {
+	float: left;
+}
+/* właściwosć FLOAT o wartosci RIGHT ustawia kolumne przy prawej stronie i robi miejsce po lewej */
+.art2 {
+	float: right;
+}
