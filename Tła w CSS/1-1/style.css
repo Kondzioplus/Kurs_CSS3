@@ -1,0 +1,11 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+nav {
+	font-size: 1.4em;
+	padding: 20px;
+	background-color: #A54657;/*ustawia kolor w tle*/
+	background-image: url('tlo.png');/*ustawia obrazek w tle*/
+}
