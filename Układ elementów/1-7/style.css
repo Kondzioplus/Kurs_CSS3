@@ -1,0 +1,26 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+	background-color: #fcfaed;
+}
+
+section {
+	display: flex;/*właściwosć DISPLAY z wartościa FLEX pozwala ustawić kolumny*/
+}
+
+article {
+	background-color: #f78668;
+	flex: 1;/*właściwośc FLEX z wartoscia 1 ustala szerokosć kolumn na identyczna*/
+}
+/*selector NTH-OF-TYPE dopasowuje każdy element, który jest n-tym elementem pochodnym (kazda kolumna z osobna moze byc stylowana)*/
+article:nth-of-type(1) {
+	flex: 3;
+}
+
+nav {
+	background-color: #3e2f5b;
+	color: #fcfaed;
+	padding: 20px 0;
+	font-size: 1.2em;
+}
+
