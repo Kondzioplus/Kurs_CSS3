@@ -1,0 +1,23 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+img {
+	filter: saturate(15%) contrast(200%);
+}
+
+.box {
+	width: 500px;
+	height: 500px;
+    /*gradient KOŁOWY*/
+	background: radial-gradient(red, yellow, blue, green);
+}
