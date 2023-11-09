@@ -1,0 +1,19 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+img {
+	transform: perspective(500px) rotateY(30deg) rotateX(40deg) translateX(200px) translateY(150px);
+    /*Wartość PERSPECTIVE aktywuje transformacje 3D, od tej wartości zawsze zaczynamy!;
+      Wartość ROTATEY obraca element na osi Y;
+      Wartość ROTATEX obraca element na osi X;*/
+}
