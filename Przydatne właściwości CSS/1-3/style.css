@@ -1,0 +1,16 @@
+body {
+	font-size: 18px;
+	color: #1a394f;
+	background: #ebeff3;
+}
+
+p {
+	line-height: 1.5;
+}
+/* @MEDIA Reguła ta jest używana w zapytaniach o media w celu zastosowania różnych stylów dla różnych typów multimediów/urządzeń. Gdy szerokość okna przegladarki bedzie minimum 800px to aktywuja się podane style, jak bedzie mniejsza niż 800px bedą to style podstawowe (w tym przypadku powstana 2 kolumny)*/
+@media (min-width: 800px) {
+	article {
+		float: left;
+		width: 47%;
+	}
+}
