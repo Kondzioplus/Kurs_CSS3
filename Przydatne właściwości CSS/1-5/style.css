@@ -1,0 +1,17 @@
+body {
+	font-size: 18px;
+	color: #1a394f;
+	background: #ebeff3;
+}
+
+p {
+	line-height: 1.5;
+}
+
+img {
+	cursor: not-allowed;/*Właściwość CURSOR zmienia wygląd kursora;
+    Wartość NOT-allowed oznacza CZYNNOŚĆ NIE DO WYKONANIA(symbol ZAKAZU);
+    Wartość POINTER oznacza WSKAŹNIK czyli możliwość KLIKNIECIA;
+    Wartość PROGRESS oznacza WCZYTYWANIE(program myśli/przetwarza);
+    */
+}
