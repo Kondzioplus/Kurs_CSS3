@@ -1,0 +1,19 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+.box {
+	width: calc(100% - 200px);/*Funkcja CALC pozwala dynamicznie wyliczać wartości elementu*/
+	height: 160px;
+	background-color: #28587B;
+}
+
