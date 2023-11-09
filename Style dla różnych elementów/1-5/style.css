@@ -1,0 +1,24 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+.box {
+	width: 300px;
+	height: 160px;
+	background-color: #0BC9CD;
+	transform: translateX(140px) translateY(160px) rotate(40deg) scale(1.4,.3);
+    /*właściwość TRANSFORM pozwala na przesuwanie, obracanie itp elementu.
+    Wartość TRANSLATEX przesuwa element w osi X;
+    Wartość TRANSLATEY przesuwa element w osi Y;
+    Wartość ROTATE obraca element (w tym przypadku o 40 stopni);
+    Wartość SCALE pozwala skalować element na osiach X i Y (powiększanie i pomniejszanie elementu przy zachowaniu jego SKALI)*/
+}
