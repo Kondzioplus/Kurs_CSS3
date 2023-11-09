@@ -1,0 +1,22 @@
+body {
+	font-size: 18px;
+	color: #1a394f;
+	background: #ebeff3;
+}
+
+p {
+	line-height: 1.5;
+}
+
+header {
+	height: 100px;
+	background: #b9cab4;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);	
+}
+
+article {
+	padding: 20px;
+	width: 45%;
+	float: left;
+}
+
