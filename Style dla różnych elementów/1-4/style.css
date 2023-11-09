@@ -1,0 +1,28 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+table {
+	width: 50%;
+	table-layout: fixed;/*reset układu tabeli*/
+	border-collapse: collapse;/*scalenie/zbliżenie komórek, niweluje podwujne ramki*/
+}
+
+th {
+	background-color: #191919;
+	color: #FFFFFF;
+	text-align: left;/*tekst przyklejony do lewej strony*/
+}
+/*szerokość pierwszej komórki - od niej zalezy szerokość całej komórki*/
+th:first-child {
+	width: 15%;
+}
+/*kolorowanie NIEPARZYSTYCH wierszy*/
+tr:nth-child(odd) {
+	background-color: #DEDEDE;
+}
+/*kolorowanie PARZYSTYCH wierszy*/
+tr:nth-child(even) {
+	background-color: #ACACAC;
+}
