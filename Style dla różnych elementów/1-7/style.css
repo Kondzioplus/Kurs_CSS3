@@ -1,0 +1,30 @@
+body {
+	font-size: 18px;
+	color: #000f08;
+}
+
+p {
+	line-height: 1.5;
+}
+
+article {
+	padding: 20px;
+}
+
+.box {
+	width: 300px;
+	height: 160px;
+	background-color: #FC814A;
+	transition: all 1.5s ease-in-out;/*właściwość TRANSITION pozwala animować elemenmty; Wartość ALL pozwala animować WSZYSTKIE WŁASCIWOŚCI elementu;
+    Wartość 1.5s oznacza DŁUGOŚĆ TRWANIA animacji;
+    Wartość EASE-IN-OUT powoduje subtelny efekt animacji, na poczatku WOLNO, nastepnie się rozpedza i spowalnia na samym końcu*/
+}
+
+.box:hover {
+	background-color: #564256;
+	width: 400px;
+    /*Selektor :HOVER animuje elementy;
+      Właściwość BACKGROUND-COLOR zmienia kolor elementu;
+      Właściwość WIDITH zmienia szerokość elementu;
+      Animacje startuja w momencie umieszczenia kursora nad elementem.*/
+}
