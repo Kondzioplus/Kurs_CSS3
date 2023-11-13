@@ -264,12 +264,12 @@ nav a {
 }
 /*odstepy dla malych urządzeń w sekcji 2*/
 .section-best-meals {
-	padding: 0 0 60px;
+	padding: 0 10% 60px;
 }
 /*odstepy dla duzych urządzeń w sekcji 2*/
 @media screen and (min-width: 1024px) {
 	.section-best-meals {
-		padding: 0 0 90px;
+		padding: 0 10% 90px;
 	}	
 }
 /*responsywnośc obrazka w sekcji 2*/
