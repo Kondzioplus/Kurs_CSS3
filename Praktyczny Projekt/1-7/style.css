@@ -109,3 +109,27 @@ p {
 	font-size: 18px;
 	color: #FF5733;
 }
+
+/*
+5. Naglowek
+*/
+
+/* tekst wyśrodkowany */
+header {
+	text-align: center;
+}
+/*wygląd paska na górze*/
+.logo-bar {
+	background-color: #FF5733;
+	padding: 10px 0;
+}
+/*zmiana PADDINGÓW na wiekszych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.logo-bar {
+		padding: 20px 0;
+	}
+}
+/*responsywne logo*/
+.logo-bar img {
+	max-width: 20%;
+}
