@@ -1,0 +1,202 @@
+/*
+1. Reset
+2. Style globalne
+3. Typografia
+4. Kompomenty
+5. Naglowek
+6. Style glownych sekcji
+7. Stopka
+*/
+
+/*
+1. Reset
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+2. Style globalne
+*/
+body {
+	background-color: #F4F3EF;
+	color: #62615C;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+/*usuniecie podkreslenia odnosników*/
+a {
+	text-decoration: none;
+}
+/*tekst we wszystkich sekcjach WYŚRODKOWANY + odstęp/wciecie góra/dół ZERO i lewo/prawo 10%*/
+section {
+	text-align: center;
+	padding: 0 10%;
+}
+/*responsywnosc zdjęć na stronie*/
+img {
+	max-width: 100%;
+}
+
+/*
+3. Typografia
+*/
+
+p {
+	font-size: 14px; /*rozmiar czcionki*/
+	line-height: 1.6;/*wysokosc odstepu miedzy linijkami*/
+}
+
+/*odwołanie do zmiany ustawień wyswietlania strony, zależne od rozmiaru ekranu urządzenia*/
+@media screen and (min-width: 1024px) {
+	p {
+		font-size: 18px;
+	}
+}
+
+/*
+4. Komponenty
+*/
+
+/* style dla nagłówków */
+.section-header {
+	padding: 42px 0 20px;
+	font-size: 18px;
+	color: #FF5733;
+}
+
+/*
+5. Naglowek
+*/
+
+/* tekst wyśrodkowany */
+header {
+	text-align: center;
+}
+/*wygląd paska na górze*/
+.logo-bar {
+	background-color: #FF5733;
+	padding: 10px 0;
+}
+/*zmiana PADDINGÓW na wiekszych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.logo-bar {
+		padding: 20px 0;
+	}
+}
+/*responsywne logo*/
+.logo-bar img {
+	max-width: 20%;
+}
+
+/*style górnej sekcji strony*/
+.top {
+	padding: 75px 0 40px;
+	color: #FFFFFF;
+	font-family: 'Source Serif 4', serif;
+	background: url('../images/header_photo_small.jpg') 0 0;/*obrazek przyklejony do lewego górnego rogu*/
+	background-size: cover; /*dopasowanie obrazka do tekstu*/
+}
+/*zmiana obrazka dla wiekszych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top {
+		background: url('../images/header_photo_big.jpg') 0 0;
+		padding: 290px 0 180px;
+		background-size: cover;
+	}
+}
+
+/*style dla nagłówka h1 w górnej części strony*/
+.top h1 {
+	margin-bottom: 8px;
+	font-size: 36px;
+	font-weight: 700;
+}
+/*style dla nagłówka h1 w górnej części strony dla dużych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top h1 {
+		margin-bottom: 80px;
+		font-size: 160px;
+	}
+}
+/*style akapitu*/
+.top p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+/*style akapitu dla duzych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top p {
+		font-size: 54px;
+	}
+}
+/*style dla przycisku CZYTAJ WIECEJ/read more*/
+.top a {
+	display: inline-block; /*element liniowo-blokowy*/
+	margin: 20px 0 0;
+	padding: 10px 24px;
+	color: #FFFFFF;
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;/*duże litery*/
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;/*zaokrąglenie ramki przycisku*/
+}
+/*style dla przycisku CZYTAJ WIECEJ/read more na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.top a {
+		margin: 60px 0 0;
+		padding: 20px 60px;
+		font-size: 24px;
+	}
+}
+/*efekt HOVER dla przycisku CZYTAJ WIECEJ - zmiana koloru po najechaniu kursorem*/
+.top a:hover {
+	background-color: #FFFFFF;
+	color: #4C4731;
+}
