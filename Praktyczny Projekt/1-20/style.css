@@ -1,0 +1,472 @@
+/*
+1. Reset
+2. Style globalne
+3. Typografia
+4. Kompomenty
+5. Naglowek
+6. Style glownych sekcji
+7. Stopka
+*/
+
+/*
+1. Reset
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+2. Style globalne
+*/
+body {
+	background-color: #F4F3EF;
+	color: #62615C;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+/*usuniecie podkreslenia odnosników*/
+a {
+	text-decoration: none;
+}
+/*tekst we wszystkich sekcjach WYŚRODKOWANY + odstęp/wciecie góra/dół ZERO i lewo/prawo 10%*/
+section {
+	text-align: center;
+	padding: 0 10%;
+}
+/*responsywnosc zdjęć na stronie*/
+img {
+	max-width: 100%;
+}
+
+/*
+3. Typografia
+*/
+
+p {
+	font-size: 14px; /*rozmiar czcionki*/
+	line-height: 1.6;/*wysokosc odstepu miedzy linijkami*/
+}
+
+/*odwołanie do zmiany ustawień wyswietlania strony, zależne od rozmiaru ekranu urządzenia*/
+@media screen and (min-width: 1024px) {
+	p {
+		font-size: 18px;
+	}
+}
+
+/*
+4. Komponenty
+*/
+
+/* style dla nagłówków na małych urządzeniach*/
+.section-header {
+	padding: 42px 0 20px;
+	font-size: 18px;
+	color: #FF5733;
+}
+/*style dla nagłówków na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.section-header {
+		padding: 0;
+	}
+}
+
+/*
+5. Naglowek
+*/
+
+/* tekst wyśrodkowany */
+header {
+	text-align: center;
+}
+/*wygląd paska na górze*/
+.logo-bar {
+	background-color: #FF5733;
+	padding: 10px 0;
+}
+/*zmiana PADDINGÓW na wiekszych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.logo-bar {
+		padding: 20px 0;
+	}
+}
+/*responsywne logo*/
+.logo-bar img {
+	max-width: 20%;
+}
+
+/*style górnej sekcji strony*/
+.top {
+	padding: 75px 0 40px;
+	color: #FFFFFF;
+	font-family: 'Source Serif 4', serif;
+	background: url('../images/header_photo_small.jpg') 0 0;/*obrazek przyklejony do lewego górnego rogu*/
+	background-size: cover; /*dopasowanie obrazka do tekstu*/
+}
+/*zmiana obrazka dla wiekszych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top {
+		background: url('../images/header_photo_big.jpg') 0 0;
+		padding: 290px 0 180px;
+		background-size: cover;
+	}
+}
+
+/*style dla nagłówka h1 w górnej części strony*/
+.top h1 {
+	margin-bottom: 8px;
+	font-size: 36px;
+	font-weight: 700;
+}
+/*style dla nagłówka h1 w górnej części strony dla dużych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top h1 {
+		margin-bottom: 80px;
+		font-size: 160px;
+	}
+}
+/*style akapitu*/
+.top p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+/*style akapitu dla duzych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.top p {
+		font-size: 54px;
+	}
+}
+/*style dla przycisku CZYTAJ WIECEJ/read more*/
+.top a {
+	display: inline-block; /*element liniowo-blokowy*/
+	margin: 20px 0 0;
+	padding: 10px 24px;
+	color: #FFFFFF;
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;/*duże litery*/
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;/*zaokrąglenie ramki przycisku*/
+}
+/*style dla przycisku CZYTAJ WIECEJ/read more na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.top a {
+		margin: 60px 0 0;
+		padding: 20px 60px;
+		font-size: 24px;
+	}
+}
+/*efekt HOVER dla przycisku CZYTAJ WIECEJ - zmiana koloru po najechaniu kursorem*/
+.top a:hover {
+	background-color: #FFFFFF;
+	color: #4C4731;
+}
+
+/*górne MENU style*/
+nav {
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 0 #DEDEDE;/*cień*/
+}
+/*odstępy w MENU na małym urządzeniu*/
+nav li {
+	padding: 15px 0;
+}
+
+/*odstepy w MENU na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	nav li {
+		display: inline-block;/*na dużych urządzeniach układ LINIOWY*/
+		padding: 60px;
+	}
+}
+/*kolor tekstu i rozmiar czcionki w MENU małych urządzeń*/
+nav a {
+	color: #62615C;
+	font-size: 12px;
+}
+/*kolor tekstu w MENU na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	nav a {
+		font-size: 24px;
+	}
+}
+
+/*
+6. Style glownych sekcji
+*/
+
+/*style sekcji gównej dla duzych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.section-welcome h1 {
+		margin: 160px 0 70px;
+		font-size: 70px;
+	}
+	/*style dla nagłówka niżej*/
+	.section-best-meals h1 {
+		margin: 25px 0 50px;
+		font-size: 34px;
+	}	
+}
+/*ukrycie obrazka na małych urządzeniach*/
+.welcome-first-image {
+	display: none;
+}
+/*odsłoniecie obrazka na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.welcome-first-image {
+		display: inline-block;/*obrazki obok siebie*/
+	}	
+}
+/*odstepy dla malych urządzeń w sekcji 2*/
+.section-best-meals {
+	padding: 0 10% 60px;
+}
+/*odstepy dla duzych urządzeń w sekcji 2*/
+@media screen and (min-width: 1024px) {
+	.section-best-meals {
+		padding: 0 10% 90px;
+	}	
+}
+/*responsywnośc obrazka w sekcji 2*/
+.section-best-meals img {
+	padding: 20px 0 0;/*odstep GÓRNY*/
+	max-width: 20%;
+}
+/*odstep miedzy zdjeciem a tekstem dla duzych urzadzeń*/
+@media screen and (min-width: 1024px) {
+	.section-best-meals img {
+		padding: 85px 0 0;
+	}
+}
+/*tło sekcji 2*/
+.section-offer {
+	padding: 40px 10% 50px;
+	background: url('../images/desen_tlo.jpg') 0 0;
+}
+/*tło sekcji nr 2 na duzych urzadzeniach*/
+@media screen and (min-width: 1024px) {
+	.section-offer {
+		padding: 80px 20% 130px;
+	}	
+}
+/*odstepy miedzy obrazkiem i tekstem w sekcji nr 2*/
+.section-offer-single img {
+	margin: 0 0 30px;
+	max-width: 12%;
+} 
+/*zmiana koloru tekstu*/
+.section-offer-single p {
+	color: #FFFFFF;
+}
+/*odstęp miedzy obrazkiem nr2 i tekstem nr2 w sekcji nr2*/
+.section-offer-single:first-child {
+	margin: 0 0 30px;
+}
+/*odstep dla obrazka nr2 na dużych urzadzeniach*/
+@media screen and (min-width: 1024px) {
+	.section-offer-single:first-child {
+		margin: 0 0 80px;
+	}
+}
+/*style dla sekcji NEWSLETTER dla małych urządzeń*/
+.section-newsletter {
+	background-color: #EFEEE9;
+	padding: 47px 0 26px;
+} 
+/*style dla sekcji NEWSLETTER dla duzych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.section-newsletter {
+		padding: 150px 0 26px;
+	} 	
+}
+/*style dla nagłówka h2 w sekcji newsletter*/
+.section-newsletter h2 {
+	margin: 0 0 24px; /*marginesy*/
+	font-size: 14px; /*rozmiar czcionki*/
+	font-weight: 700;/*grubośc czcionki*/
+	text-transform: uppercase;/*duże litery*/
+	color: #A7A79B;/*kolor tekstu*/
+}
+/*style dla nagłówka h2 w sekcji newsletter dla dużych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.section-newsletter h2 {
+		font-size: 24px;
+	}
+}
+/*margines dla formularza w sekcji newsletter*/
+.section-newsletter form {
+	margin: 0 0 40px;
+}
+/*style dla elementu INPUT*/
+.section-newsletter input {
+	display: block;/*element jeden pod drugim*/
+	width: 60%;/*szerokość*/
+	border: 1px solid #D2CFC6;/*obramowanie pełne*/
+	height: 30px;/*wysokość*/
+	line-height: 1.8;/*odstepy między liniami*/
+	text-transform: uppercase;/*duże litery*/
+	padding: 0 0 0 20px;/*odstępy*/
+	margin: 0 auto 12px; /*marginesy auto - wysrodkowany element*/
+}
+/*style dla elementu INPUT dla dużych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.section-newsletter input {
+		display: inline-block;/*układ liniowy obok siebie elementy*/
+		height: 60px;/*wysokośc*/
+		font-size: 16px;/*rozmiar czcionki*/
+	}	
+}
+/*style dla przycisku na małych urządzeniach*/
+.section-newsletter button {
+	padding: 10px 40px;
+	border: 1px solid #A7A79B;
+	background-color: #A7A79B;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+/*style dla przycisku na duzych urządzeniach*/
+@media screen and (min-width: 1024px) {
+	.section-newsletter button {
+		padding: 21px 90px;
+		margin: 0 0 0 10px;
+		font-size: 16px;
+	}
+}
+/*styl sekcji newsletter dla duzych urzadzeń (zwęrzenie)*/
+@media screen and (min-width: 1024px) {
+	.section-newsletter-wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}	
+}
+/*style dla linków społecznosciowych dla małych urzadzeń*/
+.social-links {
+	max-width: 10%;/*maksymalna szerokosc 10%*/
+	margin: 0 auto;
+}
+/*style dla linków społecznosciowych dla dużych urządzeń*/
+@media screen and (min-width: 1024px) {
+	.social-links {
+		margin: 0 auto;/*marginesy*/
+	}
+}
+/*style dla nagłówka strony kontakt - małe urządzenia*/
+.section-contact-form h1 {
+	margin: 50px 0 40px;
+}
+/*style dla nagłówka strony kontakt - duże urządzenia*/
+@media screen and (min-width: 1024px) {
+	.section-contact-form h1 {
+		margin: 120px 0 100px;
+		font-size: 70px;
+	}	
+}
+/*style formularza na stronie kontakt - małe urządzenia*/
+.section-contact-form-inner {
+	padding: 18px 0 24px;
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 1px dashed #A7A79B;/*kreskowana linia na dole*/
+}
+/*style formularza na stronie kontakt - duże urządzenia*/
+@media screen and (min-width: 1024px) {
+	.section-contact-form-inner {
+		padding: 18px 0 70px;
+	}
+}
+
+/*selektor łączony dla okienek i obszaru tekstowego - małe urządzenia*/
+.section-contact-form input,
+.section-contact-form textarea {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+	margin: 0 auto 12px;
+	border: 1px solid #D2CFC6;
+}
+/*selektor łączony dla okienek i obszaru tekstowego - duże urządzernia*/
+@media screen and (min-width: 1024px) {
+	.section-contact-form input,
+	.section-contact-form textarea {
+		width: 70%;
+	}
+}
+/*style dla okienek w których wprowadzamy dane - małe urządzenia*/
+.section-contact-form input {
+	height: 28px;
+}
+/*style dla okienek w których wprowadzamy dane - duże urządzenia*/
+@media screen and (min-width: 1024px) {
+	.section-contact-form input {
+		height: 60px;
+		font-size: 16px;
+	}	
+}
+
+/*
+7. Stopka
+*/
+
+/*style dla stopki dla małych urządzeń*/
+footer {
+	padding: 20px 0;/*odstepy*/
+	font-size: 12px;/*rozmiar czcionki*/
+	text-align: center;/*ustawienie tekstu CENTRALNE/wyśrodkowane*/
+	color: #A7A79B;/*kolor czcionki*/
+	text-transform: uppercase;/*duże litery*/
+}
+/*style dla stopki dla duzych urządzeń*/
+@media screen and (min-width: 1024px) {
+	footer {
+		padding: 40px 0;
+		font-size: 16px;
+	}
+}
